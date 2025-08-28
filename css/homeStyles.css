@@ -159,10 +159,10 @@ main {
     text-align: center;
 }
 
-#btnContato{
+#btnImprensa{
     display: flex;
     height: 50px;
-    padding: 13px 41px 13px 42px;
+    padding: 13px 41px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -175,7 +175,7 @@ main {
     color: #F8F5E7;
 }
 
-#btnContato:hover {
+#btnImprensa:hover {
     background: #6E3B7E;
     transition: background-color 0.3s ease;
 }

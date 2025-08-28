@@ -100,7 +100,7 @@ class SiteCabecalho extends HTMLElement {
             <h1 id="necromante">Necromante</h1>
         </div>
         <div class="cabecalho-center">
-            <button id="btn-home">
+            <button id="btn-home" on>
                 <img src="./img/iconeLapide.png"/>
             </button>
         </div>
@@ -109,6 +109,17 @@ class SiteCabecalho extends HTMLElement {
         </div>
     </header>
     `;
+
+        const btnHome = this.querySelector("#btn-home");
+        const btnContato = this.querySelector("#btn-contato");
+
+        btnHome.addEventListener("click", () => {
+            this.dispatchEvent(new CustomEvent("abrir-home", { bubbles: true }));
+        });
+
+        btnContato.addEventListener("click", () => {
+            this.dispatchEvent(new CustomEvent("abrir-contato", { bubbles: true }));
+        });
     }
 }
 customElements.define("site-cabecalho", SiteCabecalho);
